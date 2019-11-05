@@ -1,6 +1,4 @@
 class PeopleController < ApplicationController
-
-  class PeopleController < ApplicationController
   def new
     @person = Person.new
     @person.addresses.build(address_type: 'work')
@@ -22,5 +20,3 @@ class PeopleController < ApplicationController
     params.require(:person).permit(:name)
   end
 end
-
-  
